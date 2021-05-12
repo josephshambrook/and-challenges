@@ -28,7 +28,7 @@ O: 2
 
 I've written my solution with TypeScript - which I'm still learning, so may be quite basic, and compiler options aren't perfect.
 
-Formulas are written in `formulas.txt`. When the solution code is run, the output is written as pretty tables to `output.txt`.
+Formulas to be parsed are written in `formulas.txt`, separated by new lines. Formulas can either contain the multiples as subscript (i.e. ₂) or normal numbers. When the solution code is run, the output is written in pretty tables to `output.txt`.
 
 ### Instructions to run
 
