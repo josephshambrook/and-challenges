@@ -19,8 +19,3 @@ For the following set of intervals:
 ```
 
 The expected output is: `9`
-
-## Submission:
-
-When you're confident that you have the correct answer, check using the /check command here on Slack. When you're happy with your solution, submit a link to your source code repo using the /submit command. Submission closes noon 5th May
-Good luck!
