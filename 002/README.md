@@ -28,11 +28,11 @@ O: 2
 
 I've written my solution with TypeScript - which I'm still learning, so may be quite basic, and compiler options aren't perfect.
 
-The TypeScript is compiled to the `dist` folder. The formulas to be parsed are at the bottom of `src/solution.ts`. Formulas can either contain the multiples of elements as subscript or regular numbers (i.e. `H₂O` and `H2O` are both fine).
+Formulas are written in `formulas.txt`. When the solution code is run, the output is written as pretty tables to `output.txt`.
 
 ### Instructions to run
 
 1. Clone the repo and `cd` to this folder
 2. Run `npm i` (make sure you have Node installed)
-3. Run `npm build` to only compile the TS, or `npm run watch` to build when the `solution.js` changes
-4. Run `npm run start` to see the output
+3. Edit `formulas.txt` to contain whatever formulas you would like to parse
+4. Run `npm build` to parse the formulas, or `npm run watch` to build whenever a file changes

@@ -53,7 +53,7 @@ const unpack = (formula) => {
 const breakdown = (longFormula) => {
     const validSymbols = longFormula.match(REGEX_VALID_SYMBOLS);
     if (validSymbols === null)
-        return [];
+        return null;
     const counts = validSymbols.reduce((acc, v) => (Object.assign(Object.assign({}, acc), { [v]: (acc[v] || 0) + 1 })), {});
     // create completed object
     return Object.keys(counts).map((key) => {

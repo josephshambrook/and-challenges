@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "strict": true,
     "module": "commonjs",
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "target": "es6",
+    "noImplicitAny": true,
     "moduleResolution": "node",
     "outDir": "dist",
-    "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": true
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
-  "lib": ["es2015"]
+  "include": ["src/**/*"]
 }

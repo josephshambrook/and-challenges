@@ -63,7 +63,7 @@ const unpack = (formula: string): string => {
 const breakdown = (longFormula: string): Composition[] => {
   const validSymbols = longFormula.match(REGEX_VALID_SYMBOLS);
 
-  if (validSymbols === null) return [];
+  if (validSymbols === null) return null;
 
   const counts = validSymbols.reduce(
     (acc: Solution, v: string): Solution => ({
@@ -85,7 +85,7 @@ const breakdown = (longFormula: string): Composition[] => {
   });
 };
 
-export const getComposition = (formula: string): object => {
+export const getComposition = (formula: string): Composition[] => {
   const parsedFormula: string = replaceAllSubscript(formula);
 
   const unpackedFormula = unpack(parsedFormula);
